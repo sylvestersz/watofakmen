@@ -1,7 +1,7 @@
 module.exports = {
-  token: process.env.token || "", //Bot's Token
-  clientId: process.env.clientId || "", //ID of the bot
-  clientSecret: process.env.clientSecret || "", //Client Secret of the bot
+  token: process.env.token || "OTE2MDUwNDg5ODQ4NzY2NDg0.YakggA.xmwpvAZefpAg-oFHQCGFia1vwHM", //Bot's Token
+  clientId: process.env.clientId || "916050489848766484", //ID of the bot
+  clientSecret: process.env.clientSecret || "jLNKNVDq_y6IiZO2ctYhUbvrlN6_mbVK", //Client Secret of the bot
   port: 3000, //Port of the API and Dashboard
   scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
   serverDeafen: true, //If you want bot to stay deafened
@@ -23,7 +23,7 @@ module.exports = {
   embedColor: "BLUE", //Color of the embeds
   presence: {
     //PresenceData object | https://discord.js.org/#/docs/main/stable/typedef/PresenceData
-    status: "idle", // You can have online, idle, and dnd(invisible too but it make people think the bot is offline)
+    status: "online", // You can have online, idle, and dnd(invisible too but it make people think the bot is offline)
     activities: [
       {
         name: "Music", //Status Text

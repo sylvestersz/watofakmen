@@ -12,7 +12,7 @@ module.exports = {
   nodes: [
     {
       identifier: "Main",
-      host: "",
+      host: "0.0.0.0",
       port: 80,
       password: "",
       retryAmount: 5, //- Optional

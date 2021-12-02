@@ -1,7 +1,7 @@
 module.exports = {
-  token: process.env.token || "OTE2MDUwNDg5ODQ4NzY2NDg0.YakggA.4K85VhEqRMnQF_KRKowT-5Pcxv8", //Bot's Token
-  clientId: process.env.clientId || "916050489848766484", //ID of the bot
-  clientSecret: process.env.clientSecret || "jLNKNVDq_y6IiZO2ctYhUbvrlN6_mbVK", //Client Secret of the bot
+  token: process.env.token || "", //Bot's Token
+  clientId: process.env.clientId || "", //ID of the bot
+  clientSecret: process.env.clientSecret || "", //Client Secret of the bot
   port: 3000, //Port of the API and Dashboard
   scopes: ["identify", "guilds", "applications.commands"], //Discord OAuth2 Scopes
   serverDeafen: true, //If you want bot to stay deafened
@@ -12,11 +12,12 @@ module.exports = {
   nodes: [
     {
       identifier: "Main",
-      host: "0.0.0.0",
-      port: 80,
-      password: "",
+      host: "lavalink.devz.cloud",
+      port: 443,
+      password: "mathiscool",
       retryAmount: 5, //- Optional
       retryDelay: 1000, //- Optional
+      secure: true
       //secure: true //- Optional | Default: false
     },
   ], //Lavalink servers
@@ -28,7 +29,7 @@ module.exports = {
       {
         name: "Music", //Status Text
         type: "LISTENING", // PLAYING, WATCHING, LISTENING, STREAMING
-        url: "https://github.com/SudhanPlayz/Discord-MusicBot", // Link streaming url
+        url: "https://github.com/sylvestersz/watofakmen", // Link streaming url
       },
     ],
   },
